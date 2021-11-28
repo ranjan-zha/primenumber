@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Check Prime Number</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <script>
+       
+        function checkPrimenumber(){
+          isPrime = true;
+          var num = prompt("Enter a number");
+
+          for(let i=2;i<num; i++){
+            if(num % i==0){
+              isPrime=false;
+              break;
+            }
+          }
+
+          if(isPrime){
+            console.log("number is prime number");
+          }else{
+            console.log("number is not prime number");
+          }
+
+         }
+
+        checkPrimenumber();
+
+  </script>
+  <body>
+        <h2>Check Prime Number</h2>
+        <h4>Please see output in console</h4>
+  </body>
+</html>
